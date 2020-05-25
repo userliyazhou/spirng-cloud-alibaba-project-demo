@@ -1,0 +1,8 @@
+server:
+  port: 8080
+server.ssl.enabled: true
+server.ssl.key-store-type: jks
+server.ssl.key-store: tomcat.key
+server.ssl.key-store-password: 123456
+server.ssl.key-alias: tomcat
+

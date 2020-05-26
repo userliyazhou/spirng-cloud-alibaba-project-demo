@@ -1,0 +1,13 @@
+spring:
+   application:
+     name: down-up
+   http:
+      encoding:
+        force: true
+        charset: utf-8
+        enabled: true
+file-service:
+  # 文件路径
+  profile: D:/profile/
+server:
+  port: 8081

@@ -1,0 +1,11 @@
+zuul:
+  routes:
+    route-name1:
+      url: http://localhost:8080/
+      path: /api/**
+    route-name2:
+        url: http://localhost:8080/
+        path: /test/**
+    route-name3:
+      service-id: zuul-producer
+      path: /test1/**

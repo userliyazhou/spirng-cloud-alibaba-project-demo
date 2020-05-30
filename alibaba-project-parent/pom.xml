@@ -15,6 +15,7 @@
         <module>demo-https</module>
         <module>demo-file-updown</module>
         <module>demo-rpc-feigh</module>
+        <module>demo-zuul</module>
 
 
     </modules>

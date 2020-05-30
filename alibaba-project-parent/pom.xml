@@ -10,6 +10,13 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>demo-nacos</module>
+
+        <module>demo-sentinel</module>
+        <module>demo-https</module>
+        <module>demo-file-updown</module>
+        <module>demo-rpc-feigh</module>
+
+
     </modules>
 
     <parent>

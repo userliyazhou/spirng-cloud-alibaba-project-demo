@@ -1,0 +1,14 @@
+
+server:
+  port: 8083
+spring:
+  application.name: sentinel-demo
+  cloud:
+   sentinel:
+      transport.dashboard: localhost:8080
+      datasource:
+        ds.nacos:
+              ruleType:  flow
+              groupId: DEFAULT_GROUP
+              dataId: ${spring.application.name}-sentinel
+              server-addr : localhost:8848

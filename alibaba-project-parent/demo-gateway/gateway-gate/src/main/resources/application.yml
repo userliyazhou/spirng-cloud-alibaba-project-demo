@@ -1,0 +1,31 @@
+#端口
+server:
+  port: 8082
+#应用名
+spring:
+  http:
+    encoding:
+      force: true
+      charset: utf-8
+      enabled: true
+  application:
+    name: gateway-gate
+  #注册中心
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        register-enabled: true
+    # 网关
+    gateway:
+      discovery:
+        locator:
+          lowerCaseServiceId: true
+          enabled: true
+      routes:
+        - id: demo-gateway
+          uri: lb://gateway-producer
+          predicates:
+            - Path=/api/producer/**
+          filters:
+            - StripPrefix=1
